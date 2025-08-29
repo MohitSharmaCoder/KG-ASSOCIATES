@@ -1,0 +1,60 @@
+body { 
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-sizing: border-box; /* ✅ Fix overflow */
+}
+
+.tree {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.tree ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.tree li {
+  cursor: pointer;
+  margin: 4px 0;
+}
+
+.folder::before {
+  content: "📁 ";
+}
+
+.file::before {
+  content: "📄 ";
+}
+
+.highlight {
+  background: yellow;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.results {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}

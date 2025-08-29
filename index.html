@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/gst1.css">
     <title>Document</title>
+    <style>
+      li a{
+        /* text-decoration: none; */
+        color: #fff;
+        display: inline-block;
+        margin-top: 20px;
+      }
+      a:hover{
+        color: aqua;
+      }
+      li{
+        list-style: none;
+      }
+    </style>
 </head>
 <body>
     <header class="header">
             KG & ASSOCIATES - “Hello guys, every time you go to sleep, ask yourself: Did I do great today?”
+            <nav>
+              <ul>
+                <li><a href="/officefile.html">Find Folder</a></li>
+              </ul>
+            </nav>
     </header>
     <section class="section1">
         
@@ -18,8 +37,10 @@
     <div class="row">
       <input type="number" id="amountInput" placeholder="Enter Amount">
       <select id="gstSelect">
+        <option value="3">3%</option>
         <option value="5">5%</option>
         <option value="12">12%</option>
+        <option value="14">14%</option>
         <option value="18">18%</option>
         <option value="28">28%</option>
       </select>
